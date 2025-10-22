@@ -1,0 +1,24 @@
+<header>
+    <nav role="navigation" aria-label="Main menu">
+        <div id="logo">
+            <img src="/assets/images/logo.webp" alt="Logo of CITADEL" >
+        </div>
+
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+            ☰ Menu
+        </button>
+
+        <ul class="nav-menu" id="primary-menu">
+            {% for item in site.data.navigation %}
+                <li><a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <ul id="resources-menu">
+            <li><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="#">Huggingface</a></li>
+        </ul>
+
+    </nav>
+
+</header>
