@@ -31,20 +31,20 @@ $breakpoint-mobile: 768px;
 
 body {
     font-family: $font-main;
-    line-height: 1.5;
     color: $color-text;
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
 // -------------------------------
 // Header and navigation
 // -------------------------------
 header {
+    background: #fff;
     color: $color-text;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 3px gray solid;
+    border-bottom: 3px black solid;
 
     nav {
         display: flex;
@@ -99,8 +99,9 @@ header {
                 }
 
                 a {
-                    color: $color-text;
+                    color: black;
                     text-decoration: none;
+                    text-transform: uppercase;
                     padding: 0.5rem;
                     transition: color 0.3s ease;
 
@@ -126,8 +127,7 @@ header {
             li {
                 a {
                     color: $color-text;
-                    font-size: x-small;
-                    text-decoration: none;
+                    text-decoration: underline;
                     padding: 0.5rem;
                     transition: color 0.3s ease;
 
@@ -176,4 +176,50 @@ header {
 
 main {
     padding: 20px 40px;
+    line-height: 1.5;
+}
+
+footer {
+    border-top: 3px black solid;
+
+    .container {
+        display: flex;
+        gap: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+
+        .item {
+            min-height: 200px;
+            margin: 0;
+            padding: 1em;
+            width: 32%;
+
+            &:nth-child(2) {
+                border-left: 3px black solid;
+                border-right: 3px black solid;
+            }
+
+            img {
+                display: inline-block;
+                width: 70%;
+                height: auto;
+                margin: auto;
+            }
+
+            small {
+                
+            }
+        }
+    }
+
+    #terms-and-copyright {
+        border-top: 3px black solid;
+        padding: 1em;
+
+        p {
+            text-align: center;
+        }
+    }
 }
