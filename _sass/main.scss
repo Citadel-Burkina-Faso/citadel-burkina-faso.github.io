@@ -44,6 +44,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 88px;
     border-bottom: 3px black solid;
 
     nav {
@@ -52,13 +53,15 @@ header {
         justify-content: space-between;
         padding: 1rem 2rem;
 
-        .menu-toggle {
+        #menu-toggle {
             display: none;
             background: none;
+            height: 40px;
+            width: 40px;
+            line-height: 30px;
             border: 2px solid $color-text;
             color: $color-text;
             padding: 0.25rem 0.5rem;
-            border-radius: 4px;
             cursor: pointer;
             font-size: 1rem;
             transition: background 0.3s ease;
@@ -68,6 +71,10 @@ header {
                 background-color: rgba(255, 255, 255, 0.1);
                 outline: none;
             }
+        }
+
+        #responsive-main-menu {
+            display: none;
         }
 
         #logo {
@@ -148,8 +155,44 @@ header {
         nav {
             flex-wrap: wrap;
 
-            .menu-toggle {
+            #menu-toggle {
                 display: block;
+            }
+
+            #responsive-main-menu {
+                position: fixed;
+                top: 88px;
+                left: 0;
+                width: 100%;
+                padding: 40px;
+                height: calc(100% - 88px);
+                background-color: #fff !important;
+
+                &.hidden {
+                    display: none;
+                }
+
+                &.open {
+                    display: block;
+                    transition: all 0.3s ease;
+                }
+
+                li {
+                    list-style-type: none;
+                    margin-top: 10px;
+                    font-size: x-large;
+
+                    hr {
+                        height: 3px;
+                        background-color: black;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
             }
 
             #primary-menu, #resources-menu {
@@ -225,7 +268,7 @@ footer {
             }
         }
 
-        #socialmedia {
+        #social-media {
             ul {
                 margin-top: 10px;
 
