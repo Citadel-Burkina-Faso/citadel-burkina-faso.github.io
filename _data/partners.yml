@@ -1,34 +1,29 @@
 - name: Université XXX
   logo: /assets/images/logo.webp
   type: Host
-  type_color: "#1ca34c"
   url: https://iam.citadel.bf/
   label: Host Partner
 
 - name: Open Burkina
   logo: /assets/images/partners/open-burkina.webp
   type: Operational
-  type_color: "#1ca34c"
   url: https://openburkina.bf/
   label: Operational Partner
 
 - name: IDRC / CRDI
   logo: /assets/images/partners/cidr.webp
   type: Funder
-  type_color: "#1ca34c"
   url: https://idrc-crdi.ca/
   label: Funder Partner
 
 - name: Sida
   logo: /assets/images/partners/sida.webp
   type: Funder
-  type_color: "#1ca34c"
   url: https://www.sida.se/
   label: Funder Partner
 
 - name: AI4D Africa
   logo: /assets/images/partners/ai4d-africa.webp
   type: Thematic
-  type_color: "#1ca34c"
   url: https://ai4d.africa/
   label: Thematic Partner
