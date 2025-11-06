@@ -14,10 +14,10 @@ contact:
 
 media:
   - name: facebook
-    icon: "fa-brands fa-square-facebook"
+    icon: "fa-brands fa-facebook"
     href: "http://facebook.com/"
   - name: X
-    icon: "fa-brands fa-square-x-twitter"
+    icon: "fa-brands fa-x-twitter"
     href: "http://x.com/"
   - name: Youtube
     icon: "fa-brands fa-youtube"

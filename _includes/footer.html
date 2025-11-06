@@ -11,13 +11,15 @@
                 {% endfor %}
             </ul>
         </div>
-        <div id="social-media" class="item">
+        <div id="socialmedia" class="item">
             <p><strong>Social Media</strong></p>
-            {% for item in site.data.footer.media %}
-            <li> 
-                <a href="{{ item.href }}"><i class="{{ item.icon }}"></i></a>
-            </li>
-            {% endfor %}
+            <ul>
+                {% for item in site.data.footer.media %}
+                <li> 
+                    <a href="{{ item.href }}"><i class="{{ item.icon }}"></i></a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
         <div id="about-summary" class="item">
             <p>

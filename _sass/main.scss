@@ -209,25 +209,44 @@ footer {
                 li {
                     list-style-type: none;
                     margin-bottom: 5px;
-                    
-                    &, a {
-                        color: $color-highlight !important;
+
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px black solid;
+                        border-radius: 4px;
+                        background-color: black;
+                        color: #fff !important;
                     }
                 }
             }
         }
 
-        #social-media {
+        #socialmedia {
             ul {
-                margin-top: 100px;
+                margin-top: 10px;
 
                 li {
                     list-style-type: none;
                     display: inline-block;
+                    vertical-align: middle;
                     margin-right: 10px;
 
-                    i {
+                    a {
+                        display: inline-block;
+                        vertical-align: middle;
+                        text-align: center;
                         font-size: large;
+                        height: 40px;
+                        width: 40px;
+                        line-height: 40px;
+                        border: 1px $color-highlight solid;
+                        border-radius: 5px;
+                        background-color: $color-highlight !important;
+                        color: #fff;
                     }
                 }
             }
@@ -258,6 +277,27 @@ footer {
 
         p {
             text-align: center;
+        }
+    }
+
+    @include respond-to(mobile) {
+        .container {
+            display: block;
+        }
+
+        .item {
+            display: block;
+            min-height: auto !important;
+            margin: 0;
+            padding: 1em;
+            width: 100% !important;
+
+            &:nth-child(2) {
+                border-top: 3px black solid;
+                border-bottom: 3px black solid;
+                border-left: none !important;
+                border-right: none !important;
+            }
         }
     }
 }
