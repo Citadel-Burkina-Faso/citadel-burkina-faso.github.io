@@ -1,0 +1,34 @@
+- name: Privacy & Explainability
+  color: "#c0392b"
+  icon: fa-solid fa-user-shield
+  description: >
+    We explore transparent and explainable AI systems to ensure accountability,
+    privacy protection, and trust between humans and machines.
+
+- name: FinTech & Security
+  color: "#8e44ad"
+  icon: fa-solid fa-chart-line
+  description: >
+    We work on secure and ethical AI applications for finance and digital services,
+    supporting inclusion and innovation in African economies.
+
+- name: Health & Wellness
+  color: "#2980b9"
+  icon: fa-solid fa-heart-pulse
+  description: >
+    From disease prediction to resource allocation, our research enhances
+    public health systems with locally adapted AI tools.
+
+- name: Agriculture & Pastoralism
+  color: "#27ae60"
+  icon: fa-solid fa-tractor
+  description: >
+    We use AI to support farmers and pastoralists with data-driven insights for
+    productivity, sustainability, and food security.
+
+- name: Energy & Climate Change
+  color: "#f39c12"
+  icon: fa-solid fa-solar-panel
+  description: >
+    AI-driven models help predict and manage environmental and energy challenges,
+    promoting climate resilience ac

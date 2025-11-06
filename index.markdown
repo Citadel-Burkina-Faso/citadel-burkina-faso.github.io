@@ -9,6 +9,8 @@ permalink: /
 
 # Welcome to `CITADEL`
 
+---
+
 ## The Interdisciplinary Center of Excellence in Artificial Intelligence for Development  
 We are building AI talent and capacity in Burkina Faso and French-speaking Africa.  
 
