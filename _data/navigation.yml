@@ -1,6 +1,15 @@
-- name: Home
-  link: /
-- name: Research
-  link: /research/
-- name: Blog
-  link: /blog/
+main:
+  - name: Home
+    link: /
+  - name: Research
+    link: /research/
+  - name: Blog
+    link: /blog/
+
+resources:
+  - name: Resources
+    icon: fa-brands fa-github
+    link: https://github.com/Citadel-Burkina-Faso/
+  - name: Demos
+    icon: fa-solid fa-grip
+    link: https://huggingface.co/

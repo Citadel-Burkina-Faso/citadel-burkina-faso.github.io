@@ -9,23 +9,25 @@
         </button>
 
         <ul id="responsive-main-menu" class="hidden">
-            {% for item in site.data.navigation %}
+            {% for item in site.data.navigation.main %}
                 <li><a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
             {% endfor %}
             <li><hr></li>
-            <li><i class="fa-brands fa-github"></i><a href="#">Resources</a></li>
-            <li><i class="fa-solid fa-grip"></i><a href="#">Demos</a></li>
+            {% for item in site.data.navigation.resources %}
+                <li><i class="{{ item.icon }}"></i><a target="_blank" href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endfor %}
         </ul>
 
         <ul class="nav-menu" id="primary-menu">
-            {% for item in site.data.navigation %}
+            {% for item in site.data.navigation.main %}
                 <li><a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
             {% endfor %}
         </ul>
 
         <ul id="resources-menu">
-            <li><i class="fa-brands fa-github"></i><a href="#">Resources</a></li>
-            <li><i class="fa-solid fa-grip"></i><a href="#">Demos</a></li>
+            {% for item in site.data.navigation.resources %}
+                <li><i class="{{ item.icon }}"></i><a target="_blank" href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endfor %}
         </ul>
 
     </nav>
