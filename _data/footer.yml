@@ -1,0 +1,24 @@
+contact:
+  - type: phone
+    icon: "fa-solid fa-phone"
+    value: "+226XXXXXX"
+    href: "tel:+226XXXXXX"
+  - type: email
+    icon: "fa-solid fa-envelope"
+    value: "contact@citadel.bf"
+    href: "mailto:contact@citadel.bf"
+  - type: address
+    icon: "fa-solid fa-location-dot"
+    value: "Ouagadougou, Burkina Faso"
+    href: "https://maps.google.com"
+
+media:
+  - name: facebook
+    icon: "fa-brands fa-square-facebook"
+    href: "http://facebook.com/"
+  - name: X
+    icon: "fa-brands fa-square-x-twitter"
+    href: "http://x.com/"
+  - name: Youtube
+    icon: "fa-brands fa-youtube"
+    href: "http://youtube.com"

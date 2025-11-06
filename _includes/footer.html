@@ -1,21 +1,28 @@
 <footer>
     <div class="container">
+        <div id="contact" class="item">
+            <p></p><strong>Contact</strong>
+            <ul>
+                {% for item in site.data.footer.contact %}
+                <li>
+                    <i class="{{ item.icon }}"></i> 
+                    <a href="{{ item.href }}">{{ item.value }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="social-media" class="item">
+            <p><strong>Social Media</strong></p>
+            {% for item in site.data.footer.media %}
+            <li> 
+                <a href="{{ item.href }}"><i class="{{ item.icon }}"></i></a>
+            </li>
+            {% endfor %}
+        </div>
         <div id="about-summary" class="item">
             <p>
                 <img src="/assets/images/logo.webp" alt="Logo of CITADEL" >
             </p>
-            <p>
-                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Similique, odio, laborum quas quis dolorem velit consequuntur 
-                sed neque et perferendis obcaecati temporibus ducimus quasi porro omnis, 
-                architecto ipsam cumque illum.</small>
-            </p>
-        </div>
-        <div id="" class="item">
-
-        </div>
-        <div id="contact" class="item">
-
         </div>
     </div>
     <div id="terms-and-copyright">
